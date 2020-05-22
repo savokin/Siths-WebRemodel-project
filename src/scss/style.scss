@@ -14,17 +14,25 @@ html, body{
     height: 10vh;
 
     .logo-split{
+       
         position: absolute;
         z-index: 5;
+        
         @include phone{
-            width: 30vw;
-            left: 2vh;
+            width: 26vw;
+            left: 1vh;
             top: 2vh;
         }
+        
     }
 }
 .body1{
-    height: 60vh;
+    height: 30vh;
+    display: flex;
     
-    
+    .featurevid{
+        top: 1vh;
+        width: 100%;
+        height: auto;
+    }
 }
