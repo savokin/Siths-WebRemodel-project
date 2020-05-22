@@ -1,4 +1,4 @@
-@import 'background';
+@import 'background', 'vars';
 
 html, body{
     margin: 0;
@@ -15,7 +15,12 @@ html, body{
 
     .logo-split{
         position: absolute;
-        
+        z-index: 5;
+        @include phone{
+            width: 30vw;
+            left: 2vh;
+            top: 2vh;
+        }
     }
 }
 .body1{
