@@ -1,0 +1,25 @@
+@import 'background';
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-size: 65%;
+}
+.rel-container{
+    
+    position: relative;
+}
+.header{
+    
+    height: 10vh;
+
+    .logo-split{
+        position: absolute;
+        
+    }
+}
+.body1{
+    height: 60vh;
+    
+    
+}
