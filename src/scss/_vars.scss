@@ -26,7 +26,7 @@ $X: 800px;
     }
   }
   @mixin X {
-    @media (min-width: #{$phone}) and  (min-height: #{$X}) and (max-height: 820px){
+    @media (min-width: #{$phone}) and  (min-height: #{$X}) and (max-height: 850px){
       @content;
     }
   }
