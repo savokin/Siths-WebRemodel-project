@@ -4,6 +4,7 @@ html, body{
     margin: 0;
     padding: 0;
     font-size: 65%;
+    
 }
 .rel-container{
     
@@ -12,27 +13,29 @@ html, body{
 .header{
     
     height: 10vh;
-
+    
     .logo-split{
        
         position: absolute;
         z-index: 5;
+
+        width: 26vw;
+        left: 1vh;
+        top: 2vh;
         
-        @include phone{
-            width: 26vw;
-            left: 1vh;
-            top: 2vh;
-        }
         
     }
 }
 .body1{
-    height: 30vh;
-    display: flex;
+    height: 34vh;
+    @include X{
+        height: 28vh;
+    }
     
     .featurevid{
-        top: 1vh;
-        width: 100%;
+        padding: 1.1vh;
+        
+        width: 95%;
         height: auto;
     }
 }

@@ -1,7 +1,9 @@
-$phone:600px;
+$phone:300px;
 $tablet: 900px;
 $laptop: 1100px;
 $desktop: 1100px;
+$X: 800px;
+
 
 @mixin tablet {
     @media (min-width: #{$tablet}) {
@@ -20,6 +22,11 @@ $desktop: 1100px;
   }
   @mixin phone {
     @media (min-width: #{$phone}) {
+      @content;
+    }
+  }
+  @mixin X {
+    @media (min-width: #{$phone}) and  (min-height: #{$X}) and (max-height: 820px){
       @content;
     }
   }
