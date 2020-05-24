@@ -1,0 +1,45 @@
+.header {
+  background-color: black;
+}
+
+.body1 {
+  background-color: #dad74f;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 65%;
+}
+
+.rel-container {
+  position: relative;
+}
+
+.header {
+  height: 10vh;
+}
+.header .logo-split {
+  position: absolute;
+  z-index: 5;
+  width: 26vw;
+  left: 1vh;
+  top: 2vh;
+}
+
+.body1 {
+  height: 34vh;
+}
+@media (min-width: 300px) and (min-height: 800px) and (max-height: 850px) {
+  .body1 {
+    height: 29vh;
+  }
+}
+.body1 .featurevid {
+  padding: 1.1vh;
+  border: 3px;
+  width: 95%;
+  height: auto;
+}
+
+/*# sourceMappingURL=/style.a6dae8f7.css.map */
