@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/savokin/Siths-WebRemodel-project#readme",
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "css-vendor": "^2.0.8",
+    "prop-types": "^15.7.2",
+    "react-background-slider": "^2.0.0"
   },
   "devDependencies": {
     "sass": "^1.26.5"

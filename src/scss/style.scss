@@ -29,13 +29,25 @@ html, body{
 .body1{
     height: 34vh;
     @include X{
-        height: 29vh;
+        height: 29.5vh;
     }
     
     .featurevid{
-        margin: 1.1vh;
-        border: 8px dashed white;
-        width: 95%;
+        
+        margin: .9vh;
+        width: 94%;
         height: auto;
+
+        background: linear-gradient(white, white), repeating-linear-gradient(60deg, white 0%, white 13%, #dad74f 13%, #dad74f 18%);
+        padding: .8vh;
+        background-origin: content-box, padding-box;
+        background-clip: content-box, padding-box;
+        @include X{
+            width: 92.5%;
+        }
     }
+}
+
+.body2{
+    
 }
