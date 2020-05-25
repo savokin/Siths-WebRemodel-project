@@ -21,7 +21,9 @@
     "aos": "^2.3.4",
     "css-vendor": "^2.0.8",
     "prop-types": "^15.7.2",
-    "react-background-slider": "^2.0.0"
+    "react": "^16.13.1",
+    "react-background-slider": "^2.0.0",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "sass": "^1.26.5"
