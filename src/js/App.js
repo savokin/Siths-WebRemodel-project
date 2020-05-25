@@ -1,7 +1,9 @@
 import React, {Component} from 'react' ;
-
+import ReactDom from 'react-dom';
 import Slide from './Slideshow'
 
+import logo from '../media/Siths_logo.png';
+import video from '../media/singvid.mp4';
 
 class App extends Component {
 
@@ -9,10 +11,10 @@ class App extends Component {
         return(
             <div class="rel-container">
                 <div class="header">
-                    <img src="media/Siths_logo.png"  alt="logo" class="logo-split" />
+                    <img src={logo}  alt="logo" class="logo-split" />
                 </div>
                 <div class="body1">
-                    <video src="media/singvid.mp4" autoplay controls muted class="featurevid">
+                    <video src={video} autoPlay loop controls muted class="featurevid">
 
                     </video>
                 </div>

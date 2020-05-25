@@ -28,6 +28,7 @@ html, body{
 }
 .body1{
     height: 34vh;
+    margin-bottom: 5vh;
     @include X{
         height: 29.5vh;
     }
@@ -37,6 +38,7 @@ html, body{
         margin: .9vh;
         width: 94%;
         height: auto;
+        
 
         background: linear-gradient(white, white), repeating-linear-gradient(60deg, white 0%, white 13%, #dad74f 13%, #dad74f 18%);
         padding: .8vh;
@@ -49,8 +51,8 @@ html, body{
 }
 
 .body2{
-    margin-top: 2vh;
+    
     margin-bottom: 2vh;
     width: 100%;
-    height: 20vh;
+    height: 30vh;
 }

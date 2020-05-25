@@ -6,6 +6,10 @@ import i2 from '../media/SI2.jpg' ;
 import i3 from '../media/SI3.jpg' ;
 import i4 from '../media/SI4.jpg' ;
 
+let images = [i1, i2, i3, i4];
+
+let swidth = screen.width;
+
 
 const Slide = () =>
     <BackgroundSlider

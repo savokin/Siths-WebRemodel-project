@@ -28397,6 +28397,9 @@ var _SI4 = _interopRequireDefault(require("../media/SI4.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var images = [_SI.default, _SI2.default, _SI3.default, _SI4.default];
+var swidth = screen.width;
+
 var Slide = function Slide() {
   return /*#__PURE__*/_react.default.createElement(_reactBackgroundSlider.default, {
     images: [_SI.default, _SI2.default, _SI3.default, _SI4.default],
@@ -28407,7 +28410,11 @@ var Slide = function Slide() {
 
 var _default = Slide;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","react-background-slider":"../node_modules/react-background-slider/dist/index.js","../media/SI1.jpg":"media/SI1.jpg","../media/SI2.jpg":"media/SI2.jpg","../media/SI3.jpg":"media/SI3.jpg","../media/SI4.jpg":"media/SI4.jpg"}],"js/App.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-background-slider":"../node_modules/react-background-slider/dist/index.js","../media/SI1.jpg":"media/SI1.jpg","../media/SI2.jpg":"media/SI2.jpg","../media/SI3.jpg":"media/SI3.jpg","../media/SI4.jpg":"media/SI4.jpg"}],"media/Siths_logo.png":[function(require,module,exports) {
+module.exports = "/Siths_logo.08682284.png";
+},{}],"media/singvid.mp4":[function(require,module,exports) {
+module.exports = "/singvid.0a6ca556.mp4";
+},{}],"js/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -28417,7 +28424,13 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
+var _reactDom = _interopRequireDefault(require("react-dom"));
+
 var _Slideshow = _interopRequireDefault(require("./Slideshow"));
+
+var _Siths_logo = _interopRequireDefault(require("../media/Siths_logo.png"));
+
+var _singvid = _interopRequireDefault(require("../media/singvid.mp4"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28466,14 +28479,15 @@ var App = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/_react.default.createElement("div", {
         class: "header"
       }, /*#__PURE__*/_react.default.createElement("img", {
-        src: "media/Siths_logo.png",
+        src: _Siths_logo.default,
         alt: "logo",
         class: "logo-split"
       })), /*#__PURE__*/_react.default.createElement("div", {
         class: "body1"
       }, /*#__PURE__*/_react.default.createElement("video", {
-        src: "media/singvid.mp4",
-        autoplay: true,
+        src: _singvid.default,
+        autoPlay: true,
+        loop: true,
         controls: true,
         muted: true,
         class: "featurevid"
@@ -28488,7 +28502,7 @@ var App = /*#__PURE__*/function (_Component) {
 
 var _default = App;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./Slideshow":"js/Slideshow.js"}],"js/index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./Slideshow":"js/Slideshow.js","../media/Siths_logo.png":"media/Siths_logo.png","../media/singvid.mp4":"media/singvid.mp4"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -28530,7 +28544,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50290" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50367" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
