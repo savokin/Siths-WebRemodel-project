@@ -21,6 +21,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "css-vendor": "^2.0.8",
+    "parcel": "^1.12.4",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-background-slider": "^2.0.0",

@@ -1,21 +1,29 @@
 import React from 'react';
-import BackgroundSlider from 'react-background-slider' ;
 
-import i1 from '../media/SI1.jpg' ;
-import i2 from '../media/SI2.jpg' ;
-import i3 from '../media/SI3.jpg' ;
-import i4 from '../media/SI4.jpg' ;
+import i1 from "../media/SI1.jpg";
+import i2 from "../media/SI2.jpg";
+import i3 from "../media/SI3.jpg";
+import i4 from "../media/SI4.jpg";
 
-let images = [i1, i2, i3, i4];
-
-let swidth = screen.width;
 
 
 const Slide = () =>
-    <BackgroundSlider
-        images={[i1, i2, i3, i4]}
-        duration = {6}
-        transition = {2}
-    />
-
+    <div>
+        <div class="Slide fade">
+            <img src={i1}></img>
+        </div>
+        <div class="Slide fade">
+            <img src={i2}></img>
+        </div>
+        <div class="Slide fade">
+            <img src={i3}></img>
+        </div>
+        <div class="Slide fade">
+            <img src={i4}></img>
+        </div>
+        
+    </div>
+    
+    
 export default Slide;
+

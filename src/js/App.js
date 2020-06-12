@@ -6,7 +6,15 @@ import logo from '../media/Siths_logo.png';
 import video from '../media/singvid.mp4';
 
 class App extends Component {
+    componentDidMount(){
+        const slscript = document.createElement("script");
+        slscript.async = true;
+        slscript.src = "./slidescript.js";
 
+
+        document.body.appendChild(slscript);
+    }
+    
     render(){
         return(
             <div class="rel-container">
