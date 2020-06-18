@@ -28469,15 +28469,15 @@ var App = /*#__PURE__*/function (_Component) {
   }
 
   _createClass(App, [{
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      var slscript = document.createElement("script");
-      slscript.async = true;
-      slscript.src = "./slidescript.js";
-      document.body.appendChild(slscript);
-    }
-  }, {
     key: "render",
+
+    /*componentDidMount(){
+        const slscript = document.createElement("script");
+        slscript.async = false;
+        slscript.src = "slidescript.js";
+            document.body.appendChild(slscript);
+    }
+    */
     value: function render() {
       return /*#__PURE__*/_react.default.createElement("div", {
         class: "rel-container"
@@ -28498,7 +28498,9 @@ var App = /*#__PURE__*/function (_Component) {
         class: "featurevid"
       })), /*#__PURE__*/_react.default.createElement("div", {
         class: "body2"
-      }, /*#__PURE__*/_react.default.createElement(_Slideshow.default, null)));
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        class: "announsment-window"
+      }, "Principal's Message Bottom Text"), /*#__PURE__*/_react.default.createElement(_Slideshow.default, null)));
     }
   }]);
 
@@ -28521,30 +28523,6 @@ var _App = _interopRequireDefault(require("./App"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(_App.default, null), document.getElementById('root'));
-
-var slide = 0;
-
-function displaySl() {
-  var i;
-  var slides = document.getElementsByClassName("Slide");
-  console.log(slides);
-  console.log("bruh");
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  slide++;
-
-  if (slide > slides.length) {
-    slide = 1;
-  }
-
-  slides[slide - 1].style.display = "block";
-  setTimeout(displaySl, 2345);
-}
-
-displaySl();
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","../scss/style.scss":"scss/style.scss","./App":"js/App.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -28573,7 +28551,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58218" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65108" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

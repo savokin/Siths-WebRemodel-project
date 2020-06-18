@@ -6,15 +6,15 @@ import logo from '../media/Siths_logo.png';
 import video from '../media/singvid.mp4';
 
 class App extends Component {
-    componentDidMount(){
+    /*componentDidMount(){
         const slscript = document.createElement("script");
-        slscript.async = true;
-        slscript.src = "./slidescript.js";
+        slscript.async = false;
+        slscript.src = "slidescript.js";
 
 
         document.body.appendChild(slscript);
     }
-    
+    */
     render(){
         return(
             <div class="rel-container">
@@ -27,7 +27,19 @@ class App extends Component {
                     </video>
                 </div>
                 <div class="body2">
+                    <div class="announsment-window">
+                        Principal's Message
+
+
+
+
+
+
+                        Bottom Text
+                    </div>
+                
                     <Slide />
+                    
                 </div>
         
              </div>
